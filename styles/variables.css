@@ -1,0 +1,62 @@
+:root {
+    --main-color: #ebe1cb;
+    --secondary-color: #c4dab3;
+    --pink-color: #ddcdb0;
+    --green-color: #246b41;
+    --brown-color: #735436;
+    --text-color: #362417;
+    --title-font: 'PlayFairDisplay';
+    --text-font: 'Lora';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--main-color);
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #98b591;
+    
+}
+
+
+.logo {
+    padding-left: 10px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+}
+
+li a {
+    font-family: var(--text-font);
+    color: var(--brown-color);
+    font-size: 0.9rem;
+    text-decoration: none;
+
+}
+
+@font-face {
+    font-family: 'PlayFairDisplay';
+    src: url('../assets/fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('../assets/fonts/Lora-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}

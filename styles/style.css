@@ -1,0 +1,27 @@
+header {
+    height: 100vh;
+    background: linear-gradient(
+        to bottom, 
+        var(--secondary-color),
+        var(--main-color),
+        var(--secondary-color)
+        
+    );
+}
+
+.introducing, .devweb {
+    font-family: var(--title-font);
+    color: var(--text-color);
+    font-size: 60px;
+}
+
+.devweb {
+    color: var(--green-color);
+    font-style: italic;
+}
+
+.introducing-sentence {
+    font-family: var(--text-font);
+    color: var(--brown-color);
+    max-width: 40ch;
+}
