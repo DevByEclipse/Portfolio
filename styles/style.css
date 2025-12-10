@@ -1,27 +1,102 @@
 header {
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
     background: linear-gradient(
         to bottom, 
-        var(--secondary-color),
+        rgba(196, 218, 179, 0.6),
         var(--main-color),
-        var(--secondary-color)
-        
+        var(--main-color),
+        rgba(196, 218, 179, 0.6)
+
     );
 }
 
 .introducing, .devweb {
     font-family: var(--title-font);
     color: var(--text-color);
-    font-size: 60px;
+    font-size: 4.5rem;
+    margin-bottom: 10px;
 }
 
 .devweb {
     color: var(--green-color);
     font-style: italic;
+    margin-bottom: 25px;
 }
 
 .introducing-sentence {
+    text-align: center;
+    line-height: 1.8rem;
     font-family: var(--text-font);
     color: var(--brown-color);
-    max-width: 40ch;
+    max-width: 43ch;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.project-contact {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.project-button {
+    background-color: var(--green-color);
+    font-family: var(--text-font);
+    color: var(--main-color);
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.contact-me {
+    font-family: var(--text-font);
+    color: var(--green-color);
+    border-radius: 50px;
+    border: 2px solid var(--green-color);
+    text-decoration: none;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.discover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-family: var(--text-font);
+    color: var(--brown-color);
+    padding-top: 60px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.arrow {
+    font-size: 20px;
+    font-weight: 800;
+    display: inline-block;
+    animation: arrow-bounce 1.5s infinite ease-in-out;
+}
+
+@keyframes arrow-bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(8px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.about {
+    background-color: var(--secondary-color);
 }
