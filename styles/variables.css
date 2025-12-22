@@ -1,7 +1,7 @@
 :root {
     --main-color: #ebe1cb;
     --secondary-color: #c4dab3;
-    --pink-color: #ddcdb0;
+    --pink-color: #dd8896;
     --green-color: #246b41;
     --brown-color: #735436;
     --text-color: #362417;
@@ -42,7 +42,8 @@ ul {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    width: 30%;
+    gap: 10px;
+    width: 40%;
 }
 
 li a {

@@ -102,7 +102,7 @@ header {
 }
 
 .separation {
-    background: linear-gradient(to right, rgba(36, 107, 65, 0.6), var(--pink-color), var(--pink-color), rgba(36, 107, 65, 0.6));
+    background: linear-gradient(to right, rgba(36, 107, 65, 0.6), rgba(221, 136, 150, 0.2), rgba(221, 136, 150, 0.2), rgba(36, 107, 65, 0.6));
     height: 8px; 
 }
 
@@ -133,6 +133,7 @@ header {
 }
 
 .profile {
+    height: 50vh;
     border: solid, 25px, var(--main-color);
     border-radius: 40px;
 }
@@ -198,10 +199,15 @@ header {
     padding-right: 40px;
 }
 
+.skills-section {
+    height: 100vh;
+}
+
 .skills {
     display: flex;
     justify-content: center;
-    gap : 40px
+    gap : 40px;
+    height: 70vh;
 }
 
 .skills-article{
@@ -215,8 +221,7 @@ header {
     justify-content: start;
     align-items: center;
     gap: 20px;
-    padding: 10px;
-    padding-bottom: 20px;
+    padding: 20px;
     font-family: var(--title-font);
     font-size: 1.5rem;
     color: var(--green-color);
@@ -227,7 +232,6 @@ header {
     grid-template-columns: 2fr 2fr;
     align-items: center;
     justify-content: center;
-    padding-bottom: 30px;
     padding-left: 30px;
     padding-right: 30px;
     gap: 10px;
@@ -247,12 +251,52 @@ header {
 }
 
 .icon {
-    background-color: rgba(36, 107, 65, 0.3);
-    padding: 15px;
-    border-radius: 25px;
+    padding-right: 30px;
+    height: 4vh;
 }
 
 .skill-name {
     width: 100%;
     text-align: center;
+}
+
+.soft-skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 50%;
+    gap : 10px;
+    font-family: var(--title-font);
+    color: var(--text-color);
+    font-size: 1.1rem;
+    background-color: rgba(196, 218, 179, 0.6);
+    border: solid 1px var(--secondary-color);
+    border-radius: 15px;
+}
+
+.skill-label {
+    color: var(--brown-color);
+    font-family: var(--text-font);
+    font-size: 0.8rem
+}
+
+.quote-section {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.quote {
+    font-family: var(--text-font);
+    color: var(--brown-color);
+    font-size: 0.8rem;
+    font-style: italic;
+    line-height: 1.2rem;
+    text-align: center;
+    background-color: rgba(221, 136, 150, 0.2);
+    border : solid 1px var(--pink-color);
+    border-radius: 10px;
+    max-width: 45ch;
+    padding: 20px;
 }
